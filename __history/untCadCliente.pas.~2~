@@ -1,0 +1,39 @@
+unit untCadCliente;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, untPadrao, Data.DB, Vcl.Grids,
+  Vcl.DBGrids, Vcl.StdCtrls, Vcl.Buttons, Vcl.ExtCtrls, Vcl.Mask, Vcl.DBCtrls;
+
+type
+  TfrmPadrao1 = class(TfrmPadrao)
+    Label1: TLabel;
+    dbeCod: TDBEdit;
+    Label2: TLabel;
+    dbeNome: TDBEdit;
+    Label3: TLabel;
+    dbeEndereco: TDBEdit;
+    Label4: TLabel;
+    dbeCpf: TDBEdit;
+    Label5: TLabel;
+    dbeTelefone: TDBEdit;
+    Label6: TLabel;
+    dbeCidade: TDBEdit;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmPadrao1: TfrmPadrao1;
+
+implementation
+
+{$R *.dfm}
+
+uses untModulo;
+
+end.

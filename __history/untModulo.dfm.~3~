@@ -1,0 +1,31 @@
+object modulo: Tmodulo
+  OldCreateOrder = False
+  Height = 386
+  Width = 714
+  object conexao: TFDConnection
+    Params.Strings = (
+      'User_Name=root'
+      'Database=venda'
+      'DriverID=MySQL')
+    LoginPrompt = False
+    Left = 48
+    Top = 32
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 152
+    Top = 32
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Users\edriano.campana\Desktop\versao_2010\SistemaVenda\libmys' +
+      'ql.dll'
+    Left = 288
+    Top = 32
+  end
+  object qryAutoNum: TFDQuery
+    Connection = conexao
+    Left = 48
+    Top = 136
+  end
+end
